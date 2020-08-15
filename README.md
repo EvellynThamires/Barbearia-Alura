@@ -1,4 +1,3 @@
-# Projeto do curso de HTML e CSS da Alura
+## Introdução
 
-https://evellynthamires.github.io/Study/
-"# Barbearia-Alura" 
+Projeto desenvolvido pelo curso da Alura sobre HTML e CSS.
