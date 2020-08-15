@@ -1,0 +1,120 @@
+<!-- Alt em imagens para melhorar a acessibilidade. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato - Barbearia Alura</title>
+        
+        <link rel="stylesheet" href="reset.css/reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="./Image/logo.png" alt="Logo da Barbearia Alura"></h1>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <!-- Formulário -->
+            <form> 
+                
+                <!-- Label para criar uma etiqueta. -->
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <!-- Qual é o tipo. Para criar o campo á ser digitado. -->
+                <!-- Required para que seja obrigatório o preenchimento. -->
+                <!-- Placeholder para criar um exemplo a ser preenchido -->
+                <input type="text" id="nomesobrenome" class="input-padrao" required> 
+           
+                <!-- Tipo email para ser modificado o teclado do celular. -->
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com.br"> 
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXX">
+
+               
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>  
+                <!-- Uma caixa de texto maior. Cols de coluna e rows de linhas -->
+
+               
+                <!-- Para agrupar elementos como labels. E no lugar de paragrafo usar legend, serve como um titulo -->
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"
+                    >Email</label>
+                    
+                    <!-- Com a criação do name ele faz com que quando for selecionado um, o outro seja desmarcado -->
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"
+                    >Telefone</label>
+                    
+                    <!-- Checked para marcar uma opção. -->
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+                    checked>Whatsapp</label>
+                </fieldset>
+
+                <!-- Um campo selecionado com opções. -->
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?
+                </label>
+                
+                <!-- Criar o botão de envio. Valor para modificar. -->
+                <input type="submit" value="Enviar Formulário" class="enviar"> 
+            
+            </form>
+
+            <!-- Tabela -->
+            <table>
+                <!-- Table Rows para linhas. TD celula. -->
+                <!-- Colspan para agrupar celulas -->
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <img src="./Image/logo-branco.png" alt="Logo da Barbearia Alura">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2020.</p>
+        </footer>
+    </body>
+</html>
